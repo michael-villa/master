@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Handsome Men Agent</title>
+    <link rel=stylesheet href="styles/main.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="form1">
+        <img id="logo" src="../img/zlivio.png" alt="logo">
+        <img id="men" src="../img/men.png" alt="men">
+        <form action="GET">
+            <select id="usersList" name="usersList" class="fields" onchange="setCc()">
+                <option id="def" value="" selected disabled hidden style="background-image: url(img/user.png);">Name</option>
+            </select>
+            <input type="text" id="cc" name="cc" class="fields" value="" disabled="true"></input>
+        </form>
+        <button id="send" name="send" type="submit" onclick="on()">
+            Enviar
+        </button>
+        <p id="followUs">Siguenos</p>
+        <a href="https://www.facebook.com/zlivio/" target="_blank"><img border="0" alt="facebook" src="/img/facebook.png" width="30" height="26"></a>
+        <a href="https://www.instagram.com/zlivio_com/" target="_blank"><img border="0" alt="instagram" src="/img/instagram.png" width="30" height="26"></a>
+        <a href="https://app.zlivio.com/" target="_blank"><img border="0" alt="domain" src="/img/domain.png" width="30" height="26"></a>
+    </div>
+
+    <div id="overlay" onclick="off()">
+        <div id="text">
+            <p id="success"></p>
+        </div>
+    </div>
+</body>
